@@ -1,2 +1,4 @@
 DEBUG=True
 HOST='0.0.0.0'
+USERNAME='john'
+PASSWORD='due123'
