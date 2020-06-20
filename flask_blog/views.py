@@ -4,7 +4,7 @@ from flask_blog import app
 
 @app.route('/')
 def show_entries():
-    return render_template('entries/index.html')
+    return render_template('/index.html')
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -15,7 +15,7 @@ def login():
             print('Password is different')
         else:
             return redirect('/')
-    return render_template('entries/login.html')
+    return render_template('/login.html')
 
 @app.route('/logout')
 def logout():
